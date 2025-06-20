@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "500175624564",
+    "firebase_url": "https://projectpratica-default-rtdb.firebaseio.com",
+    "project_id": "projectpratica",
+    "storage_bucket": "projectpratica.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:500175624564:android:5d800afe5c392dda857421",
+        "android_client_info": {
+          "package_name": "com.example.c36a"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKSCTA78EjhxxfFHpO04N6dsDRYCo0Dqc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:500175624564:android:8332213ddc96738d857421",
+        "android_client_info": {
+          "package_name": "com.example.grocerystore"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKSCTA78EjhxxfFHpO04N6dsDRYCo0Dqc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
