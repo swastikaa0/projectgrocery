@@ -36,14 +36,14 @@ class NavigationActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            NavigationBody()
+            NavigationBodyy()
         }
     }
 }
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun NavigationBody() {
+fun NavigationBodyy() {
     data class BottomNavItem(val label: String, val icon: ImageVector)
 
     val bottomNavItems = listOf(
