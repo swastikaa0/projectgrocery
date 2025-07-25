@@ -4,6 +4,7 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.MANAGE_MEDIA" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
 
     <application
         android:allowBackup="true"
@@ -14,7 +15,74 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.C36A"
+        tools:replace="android:fullBackupContent"
         tools:targetApi="31">
+        <activity
+            android:name=".view.BottomNavigation"
+            android:exported="true"
+            android:label="@string/title_activity_bottom_navigation"
+            android:theme="@style/Theme.C36A">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.DashboardUserActivity"
+            android:exported="true"
+            android:label="@string/title_activity_dashboard_user"
+            android:theme="@style/Theme.C36A">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.WishlistActivity"
+            android:exported="true"
+            android:label="@string/title_activity_wishlist"
+            android:theme="@style/Theme.C36A">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.AddressActivity"
+            android:exported="true"
+            android:label="@string/title_activity_address"
+            android:theme="@style/Theme.C36A">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.UserDashboardActivity"
+            android:exported="true"
+            android:label="@string/title_activity_user_dashboard"
+            android:theme="@style/Theme.C36A">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.CartActivity"
+            android:exported="true"
+            android:label="@string/title_activity_cart"
+            android:theme="@style/Theme.C36A">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".view.UpdateProductActivity"
             android:exported="true"

@@ -89,7 +89,7 @@ fun DashboardBody() {
                     Card(modifier = Modifier.padding(10.dp)) {
                         Column(modifier = Modifier.padding(12.dp)) {
                             Text("${eachProduct?.productName}}")
-                            Text("${eachProduct?.productDesc}")
+                            Text("${eachProduct?.productDescription}")
                             Text("${eachProduct?.productPrice}")
 
                             Row(

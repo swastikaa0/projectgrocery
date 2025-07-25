@@ -8,4 +8,5 @@ data class UserModel(
     var gender : String = "",
     var phone : String = "", //9808101255
     var address : String = "",
+    var image  : String = ""
 )

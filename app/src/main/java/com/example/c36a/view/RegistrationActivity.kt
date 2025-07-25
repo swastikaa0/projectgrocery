@@ -1,11 +1,13 @@
 package com.example.c36a.view
 
 import android.app.Activity
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
@@ -21,12 +23,16 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowDropDown
 import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.DropdownMenu
 import androidx.compose.material3.DropdownMenuItem
 import androidx.compose.material3.Icon
 import androidx.compose.material3.OutlinedTextField
+
+
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
+import androidx.compose.material3.TextButton
 import androidx.compose.material3.TextFieldDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
@@ -40,9 +46,11 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.onGloballyPositioned
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalDensity
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.toSize
+import com.example.c36a.R
 import com.example.c36a.model.UserModel
 import com.example.c36a.repository.UserRepositoryImpl
 import com.example.c36a.viewmodel.UserViewModel
@@ -89,6 +97,18 @@ fun RegBody(innerPaddingValues: PaddingValues) {
             .background(color = Color.White)
     ) {
         Spacer(modifier = Modifier.height(50.dp))
+
+        Image(
+            painter = painterResource(id = R.drawable.logo),
+            contentDescription = "App Logo",
+            modifier = Modifier
+                .height(100.dp)
+                .fillMaxWidth()
+                .padding(bottom = 20.dp),
+            alignment = Alignment.Center
+        )
+
+
         Row(
             verticalAlignment = Alignment.CenterVertically
         ) {
@@ -100,7 +120,13 @@ fun RegBody(innerPaddingValues: PaddingValues) {
                 placeholder = {
                     Text("Firstname")
                 },
-                modifier = Modifier.weight(1f)
+                modifier = Modifier.weight(1f),
+                colors = TextFieldDefaults.colors(
+                    focusedIndicatorColor = Color(0xFF2F7D00),
+                    unfocusedIndicatorColor = Color(0xFF2F7D00),
+                    focusedContainerColor = Color.Gray.copy(alpha = 0.2f),
+                    unfocusedContainerColor = Color.Gray.copy(alpha = 0.2f)
+                )
             )
             Spacer(modifier = Modifier.width(10.dp))
             OutlinedTextField(
@@ -111,7 +137,13 @@ fun RegBody(innerPaddingValues: PaddingValues) {
                 placeholder = {
                     Text("Lastname")
                 },
-                modifier = Modifier.weight(1f)
+                modifier = Modifier.weight(1f),
+                colors = TextFieldDefaults.colors(
+                    focusedIndicatorColor = Color(0xFF2F7D00),
+                    unfocusedIndicatorColor = Color(0xFF2F7D00),
+                    focusedContainerColor = Color.Gray.copy(alpha = 0.2f),
+                    unfocusedContainerColor = Color.Gray.copy(alpha = 0.2f)
+                )
             )
         }
         Spacer(modifier = Modifier.height(20.dp))
@@ -123,7 +155,13 @@ fun RegBody(innerPaddingValues: PaddingValues) {
             placeholder = {
                 Text("abc@gmail.com")
             },
-            modifier = Modifier.fillMaxWidth()
+            modifier = Modifier.fillMaxWidth(),
+            colors = TextFieldDefaults.colors(
+                focusedIndicatorColor = Color(0xFF2F7D00),
+                unfocusedIndicatorColor = Color(0xFF2F7D00),
+                focusedContainerColor = Color.Gray.copy(alpha = 0.2f),
+                unfocusedContainerColor = Color.Gray.copy(alpha = 0.2f)
+            )
         )
 
         Spacer(modifier = Modifier.height(20.dp))
@@ -143,7 +181,7 @@ fun RegBody(innerPaddingValues: PaddingValues) {
                 placeholder = { Text("Select Country") },
                 enabled = false, // prevent manual typing
                 colors = TextFieldDefaults.colors(
-                    disabledIndicatorColor = Color.Gray,
+                    disabledIndicatorColor = Color(0xFF2F7D00),
                     disabledContainerColor = Color.White,
                 ),
                 trailingIcon = {
@@ -181,7 +219,13 @@ fun RegBody(innerPaddingValues: PaddingValues) {
             placeholder = {
                 Text("*******")
             },
-            modifier = Modifier.fillMaxWidth()
+            modifier = Modifier.fillMaxWidth(),
+            colors = TextFieldDefaults.colors(
+                focusedIndicatorColor = Color(0xFF2F7D00),
+                unfocusedIndicatorColor = Color(0xFF2F7D00),
+                focusedContainerColor = Color.Gray.copy(alpha = 0.2f),
+                unfocusedContainerColor = Color.Gray.copy(alpha = 0.2f)
+            )
         )
         Spacer(modifier = Modifier.height(20.dp))
 
@@ -206,13 +250,30 @@ fun RegBody(innerPaddingValues: PaddingValues) {
                     }
                 }
             },
-            modifier = Modifier.fillMaxWidth()
+            modifier = Modifier.fillMaxWidth(),
+            colors = ButtonDefaults.buttonColors(
+                containerColor = Color(0xFF2F7D00),
+                contentColor = Color.White
+            )
         ) {
             Text("Register")
         }
+        Spacer(modifier = Modifier.height(10.dp))
+
+        // 👇 "Go to Login" Navigation
+        TextButton(
+            onClick = {
+                activity?.startActivity(Intent(context, LoginActivity::class.java))
+                activity?.finish()
+            },
+            modifier = Modifier.align(Alignment.CenterHorizontally)
+        ) {
+            Text("Already have an account? Login", color = Color.Blue)
+        }
+    }
 
     }
-}
+
 
 @Preview
 @Composable

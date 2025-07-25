@@ -42,6 +42,8 @@ class SplashActivity : ComponentActivity() {
 @Composable
 fun SplashBody() {
 
+    val MintGreen = Color(0xFFBFD8C2)
+
     val context = LocalContext.current
     val activity = context as Activity
 
@@ -67,13 +69,14 @@ fun SplashBody() {
 
     Scaffold { padding ->
         Column(modifier = Modifier
-            .padding(padding).background(color = Color.White)
+            .padding(padding)
+            .background(color = MintGreen )
             .fillMaxSize(),
             verticalArrangement = Arrangement.Center,
             horizontalAlignment = Alignment.CenterHorizontally
             ) {
             Image(
-                painterResource(R.drawable.img),
+                painterResource(R.drawable.logo),
                 contentDescription = null
             )
             Spacer(modifier = Modifier.height(10.dp))

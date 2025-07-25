@@ -12,6 +12,7 @@ import androidx.compose.material.icons.filled.Home
 import androidx.compose.material.icons.filled.Person
 import androidx.compose.material.icons.filled.Search
 import androidx.compose.material.icons.filled.Settings
+import androidx.compose.material.icons.filled.ShoppingCart
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
@@ -47,8 +48,8 @@ fun NavigationBody() {
 
     val bottomNavItems = listOf(
         BottomNavItem("Home", Icons.Default.Home),
-        BottomNavItem("Search", Icons.Default.Search),
-        BottomNavItem("Profile", Icons.Default.Person)
+        BottomNavItem("Cart", Icons.Default.ShoppingCart),
+        BottomNavItem("Wishlist", Icons.Default.Person)
     )
 
     var selectedIndex by remember { mutableStateOf(0) }
@@ -58,7 +59,7 @@ fun NavigationBody() {
         topBar = {
             TopAppBar(
                 title = {
-                    Text("Ecommerce")
+                    Text("DailyGrocer")
                 },
                 actions = {
 
@@ -106,8 +107,8 @@ fun NavigationBody() {
         ) {
             when (selectedIndex) {
                 0 -> Home()
-                1 -> Profile()
-                2 -> Settings()
+                1 -> Products()
+                2 -> Cart()
             }
         }
     }

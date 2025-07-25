@@ -26,6 +26,7 @@ import androidx.compose.material.icons.filled.Email
 import androidx.compose.material.icons.filled.Lock
 import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Checkbox
 import androidx.compose.material3.CheckboxDefaults
 import androidx.compose.material3.Icon
@@ -144,7 +145,7 @@ fun LoginBody() {
             Spacer(modifier = Modifier.height(50.dp))
 
             Image(
-                painter = painterResource(R.drawable.img),
+                painter = painterResource(R.drawable.logo),
                 contentDescription = null
             )
 
@@ -164,9 +165,9 @@ fun LoginBody() {
                 //            minLines = 4,
                 colors = TextFieldDefaults.colors(
                     focusedContainerColor = Color.Gray.copy(alpha = 0.2f),
-                    focusedIndicatorColor = Color.Green,
+                    focusedIndicatorColor = Color(0xFF2F7D00),
                     unfocusedContainerColor = Color.Gray.copy(alpha = 0.2f),
-                    unfocusedIndicatorColor = Color.Blue
+                    unfocusedIndicatorColor = Color(0xFF2F7D00)
                 ),
                 shape = RoundedCornerShape(12.dp),
                 prefix = {
@@ -191,9 +192,9 @@ fun LoginBody() {
                 },
                 colors = TextFieldDefaults.colors(
                     focusedContainerColor = Color.Gray.copy(alpha = 0.2f),
-                    focusedIndicatorColor = Color.Green,
+                    focusedIndicatorColor = Color(0xFF2F7D00),
                     unfocusedContainerColor = Color.Gray.copy(alpha = 0.2f),
-                    unfocusedIndicatorColor = Color.Blue
+                    unfocusedIndicatorColor = Color(0xFF2F7D00)
                 ),
                 shape = RoundedCornerShape(12.dp),
                 prefix = {
@@ -249,51 +250,45 @@ fun LoginBody() {
 
             Button(
                 onClick = {
+//                    userViewModel.login(email, password) { success, message ->
+//                        if (success) {
+//                            Toast.makeText(context, message, Toast.LENGTH_LONG).show()
+//
+//                            val intent = Intent(context, NavigationActivity::class.java)
+//                            context.startActivity(intent)
+//                            activity?.finish()
+//                        } else {
+//                            Toast.makeText(context, message, Toast.LENGTH_LONG).show()
+//
+//                        }
+//                    }
+
                     userViewModel.login(email, password) { success, message ->
                         if (success) {
                             Toast.makeText(context, message, Toast.LENGTH_LONG).show()
 
-                            val intent = Intent(context, DashboardActivity::class.java)
+                            val intent = if (email == "ram@gmail.com") {
+                                Intent(context, DashboardActivity::class.java)
+                            } else {
+                                Intent(context, DashboardUserActivity()::class.java)
+                            }
+
                             context.startActivity(intent)
-                            activity?.finish()
+                            activity.finish()
                         } else {
                             Toast.makeText(context, message, Toast.LENGTH_LONG).show()
-
                         }
                     }
-//                    if (email == "ram@gmail.com"
-//                        && password == "password"
-//                    ) {
+
 //
-//                        if(rememberMe){
-//                            editor.putString("email",email)
-//                            editor.putString("password",password)
-//                            editor.apply()
-//                        }
-//                        val intent = Intent(context, DashboardActivity::class.java)
-//
-//                        //to pass data to another activity
-//                        intent.putExtra("email",email)
-//                        intent.putExtra("password",password)
-//
-//                        context.startActivity(intent)
-//
-//                        activity.finish()
-//
-//                        Toast.makeText(
-//                            context, "Login success",
-//                            Toast.LENGTH_SHORT
-//                        ).show()
-//                    } else {
-//                        //snackbar
-//                        couroutineScope.launch {
-//                            snackbarHostState.showSnackbar("Invalid login")
-//                        }
-//                    }
                 }, modifier = Modifier
                     .fillMaxWidth()
                     .padding(horizontal = 20.dp),
-                shape = RoundedCornerShape(10.dp)
+                shape = RoundedCornerShape(10.dp),
+                colors = ButtonDefaults.buttonColors(
+                    containerColor = Color(0xFF2F7D00),
+                    contentColor = Color.White
+                )
             ) {
                 Text("Login")
             }

@@ -10,4 +10,11 @@
     <string name="title_activity_registration">RegistrationActivity</string>
     <string name="title_activity_add_product">AddProductActivity</string>
     <string name="title_activity_update_product">UpdateProductActivity</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="title_activity_cart">CartActivity</string>
+    <string name="title_activity_user_dashboard">UserDashboardActivity</string>
+    <string name="title_activity_address">AddressActivity</string>
+    <string name="title_activity_wishlist">WishlistActivity</string>
+    <string name="title_activity_dashboard_user">DashboardUserActivity</string>
+    <string name="title_activity_bottom_navigation">BottomNavigation</string>
 </resources>
