@@ -17,4 +17,5 @@
     <string name="title_activity_wishlist">WishlistActivity</string>
     <string name="title_activity_dashboard_user">DashboardUserActivity</string>
     <string name="title_activity_bottom_navigation">BottomNavigation</string>
+    <string name="title_activity_order">OrderActivity</string>
 </resources>

@@ -117,5 +117,5 @@ fun NavigationBodyy() {
 @Preview(showBackground = true)
 @Composable
 fun NavigationBodyPreview() {
-    NavigationBody()
+    NavigationBodyy()
 }

@@ -102,7 +102,7 @@ fun RegBody(innerPaddingValues: PaddingValues) {
             painter = painterResource(id = R.drawable.logo),
             contentDescription = "App Logo",
             modifier = Modifier
-                .height(100.dp)
+                .height(200.dp)
                 .fillMaxWidth()
                 .padding(bottom = 20.dp),
             alignment = Alignment.Center
@@ -122,8 +122,8 @@ fun RegBody(innerPaddingValues: PaddingValues) {
                 },
                 modifier = Modifier.weight(1f),
                 colors = TextFieldDefaults.colors(
-                    focusedIndicatorColor = Color(0xFF2F7D00),
-                    unfocusedIndicatorColor = Color(0xFF2F7D00),
+                    focusedIndicatorColor = Color(0xFFF4A261),
+                    unfocusedIndicatorColor = Color(0xFFFCCB8C),
                     focusedContainerColor = Color.Gray.copy(alpha = 0.2f),
                     unfocusedContainerColor = Color.Gray.copy(alpha = 0.2f)
                 )
@@ -139,8 +139,8 @@ fun RegBody(innerPaddingValues: PaddingValues) {
                 },
                 modifier = Modifier.weight(1f),
                 colors = TextFieldDefaults.colors(
-                    focusedIndicatorColor = Color(0xFF2F7D00),
-                    unfocusedIndicatorColor = Color(0xFF2F7D00),
+                    focusedIndicatorColor = Color(0xFFF4A261),
+                    unfocusedIndicatorColor = Color(0xFFFCCB8C),
                     focusedContainerColor = Color.Gray.copy(alpha = 0.2f),
                     unfocusedContainerColor = Color.Gray.copy(alpha = 0.2f)
                 )
@@ -157,8 +157,8 @@ fun RegBody(innerPaddingValues: PaddingValues) {
             },
             modifier = Modifier.fillMaxWidth(),
             colors = TextFieldDefaults.colors(
-                focusedIndicatorColor = Color(0xFF2F7D00),
-                unfocusedIndicatorColor = Color(0xFF2F7D00),
+                focusedIndicatorColor = Color(0xFFF4A261),
+                unfocusedIndicatorColor = Color(0xFFFCCB8C),
                 focusedContainerColor = Color.Gray.copy(alpha = 0.2f),
                 unfocusedContainerColor = Color.Gray.copy(alpha = 0.2f)
             )
@@ -181,7 +181,7 @@ fun RegBody(innerPaddingValues: PaddingValues) {
                 placeholder = { Text("Select Country") },
                 enabled = false, // prevent manual typing
                 colors = TextFieldDefaults.colors(
-                    disabledIndicatorColor = Color(0xFF2F7D00),
+                    disabledIndicatorColor = Color(0xFFFCCB8C),
                     disabledContainerColor = Color.White,
                 ),
                 trailingIcon = {
@@ -221,8 +221,8 @@ fun RegBody(innerPaddingValues: PaddingValues) {
             },
             modifier = Modifier.fillMaxWidth(),
             colors = TextFieldDefaults.colors(
-                focusedIndicatorColor = Color(0xFF2F7D00),
-                unfocusedIndicatorColor = Color(0xFF2F7D00),
+                focusedIndicatorColor = Color(0xFFF4A261),
+                unfocusedIndicatorColor = Color(0xFFFCCB8C),
                 focusedContainerColor = Color.Gray.copy(alpha = 0.2f),
                 unfocusedContainerColor = Color.Gray.copy(alpha = 0.2f)
             )
@@ -252,7 +252,7 @@ fun RegBody(innerPaddingValues: PaddingValues) {
             },
             modifier = Modifier.fillMaxWidth(),
             colors = ButtonDefaults.buttonColors(
-                containerColor = Color(0xFF2F7D00),
+                containerColor = Color(0xFFF4A261),
                 contentColor = Color.White
             )
         ) {

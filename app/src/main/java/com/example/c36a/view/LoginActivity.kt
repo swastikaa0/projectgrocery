@@ -165,9 +165,9 @@ fun LoginBody() {
                 //            minLines = 4,
                 colors = TextFieldDefaults.colors(
                     focusedContainerColor = Color.Gray.copy(alpha = 0.2f),
-                    focusedIndicatorColor = Color(0xFF2F7D00),
+                    focusedIndicatorColor = Color(0xFFF4A261),
                     unfocusedContainerColor = Color.Gray.copy(alpha = 0.2f),
-                    unfocusedIndicatorColor = Color(0xFF2F7D00)
+                    unfocusedIndicatorColor = Color(0xFFFCCB8C)
                 ),
                 shape = RoundedCornerShape(12.dp),
                 prefix = {
@@ -192,9 +192,9 @@ fun LoginBody() {
                 },
                 colors = TextFieldDefaults.colors(
                     focusedContainerColor = Color.Gray.copy(alpha = 0.2f),
-                    focusedIndicatorColor = Color(0xFF2F7D00),
+                    focusedIndicatorColor = Color(0xFFF4A261),
                     unfocusedContainerColor = Color.Gray.copy(alpha = 0.2f),
-                    unfocusedIndicatorColor = Color(0xFF2F7D00)
+                    unfocusedIndicatorColor = Color(0xFFFCCB8C)
                 ),
                 shape = RoundedCornerShape(12.dp),
                 prefix = {
@@ -286,7 +286,7 @@ fun LoginBody() {
                     .padding(horizontal = 20.dp),
                 shape = RoundedCornerShape(10.dp),
                 colors = ButtonDefaults.buttonColors(
-                    containerColor = Color(0xFF2F7D00),
+                    containerColor = Color(0xFFF4A261),
                     contentColor = Color.White
                 )
             ) {
