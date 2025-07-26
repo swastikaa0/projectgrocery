@@ -57,12 +57,12 @@ fun Products() {
 //            Product(9, "Bell Pepper", "$4.25", "/KG", 4.4f, R.drawable.apple_image, category = "Vegetable"),
 //            Product(10, "Spinach", "$2.80", "/bunch", 4.0f, R.drawable.apple_image, category = "Vegetable"),
 
-            // Bakery Items (5 items)
-            Product(11, "White Bread", "$2.50", "/loaf", 4.1f, R.drawable.apple_image, category = "Bakery"),
-            Product(12, "Croissant", "$1.75", "/piece", 4.6f, R.drawable.apple_image, category = "Bakery"),
-            Product(13, "Bagel", "$0.85", "/piece", 4.2f, R.drawable.apple_image, category = "Bakery"),
-            Product(14, "Muffin", "$2.25", "/piece", 4.3f, R.drawable.apple_image, category = "Bakery"),
-            Product(15, "Donut", "$1.50", "/piece", 4.0f, R.drawable.apple_image, category = "Bakery"),
+//            // Bakery Items (5 items)
+//            Product(11, "White Bread", "$2.50", "/loaf", 4.1f, R.drawable.apple_image, category = "Bakery"),
+//            Product(12, "Croissant", "$1.75", "/piece", 4.6f, R.drawable.apple_image, category = "Bakery"),
+//            Product(13, "Bagel", "$0.85", "/piece", 4.2f, R.drawable.apple_image, category = "Bakery"),
+//            Product(14, "Muffin", "$2.25", "/piece", 4.3f, R.drawable.apple_image, category = "Bakery"),
+//            Product(15, "Donut", "$1.50", "/piece", 4.0f, R.drawable.apple_image, category = "Bakery"),
 
             // Milk Products (5 items)
             Product(16, "Whole Milk", "$3.20", "/liter", 4.4f, R.drawable.apple_image, category = "Dairy"),
