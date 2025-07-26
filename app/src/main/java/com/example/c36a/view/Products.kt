@@ -51,11 +51,11 @@ fun Products() {
 //            Product(5, "Mango", "$3.75", "/KG", 4.7f, R.drawable.apple_image, category = "Fruit"),
 
             // Vegetables (5 items)
-            Product(6, "Carrot", "$1.80", "/KG", 4.2f, R.drawable.apple_image, category = "Vegetable"),
-            Product(7, "Tomato", "$2.20", "/KG", 4.1f, R.drawable.apple_image, category = "Vegetable"),
-            Product(8, "Broccoli", "$3.50", "/KG", 4.3f, R.drawable.apple_image, category = "Vegetable"),
-            Product(9, "Bell Pepper", "$4.25", "/KG", 4.4f, R.drawable.apple_image, category = "Vegetable"),
-            Product(10, "Spinach", "$2.80", "/bunch", 4.0f, R.drawable.apple_image, category = "Vegetable"),
+//            Product(6, "Carrot", "$1.80", "/KG", 4.2f, R.drawable.apple_image, category = "Vegetable"),
+//            Product(7, "Tomato", "$2.20", "/KG", 4.1f, R.drawable.apple_image, category = "Vegetable"),
+//            Product(8, "Broccoli", "$3.50", "/KG", 4.3f, R.drawable.apple_image, category = "Vegetable"),
+//            Product(9, "Bell Pepper", "$4.25", "/KG", 4.4f, R.drawable.apple_image, category = "Vegetable"),
+//            Product(10, "Spinach", "$2.80", "/bunch", 4.0f, R.drawable.apple_image, category = "Vegetable"),
 
             // Bakery Items (5 items)
             Product(11, "White Bread", "$2.50", "/loaf", 4.1f, R.drawable.apple_image, category = "Bakery"),
