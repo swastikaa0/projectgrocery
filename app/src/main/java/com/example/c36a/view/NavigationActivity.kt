@@ -86,18 +86,18 @@ fun NavigationBodyy() {
 //                }
             )
         },
-        bottomBar = {
-            NavigationBar {
-                bottomNavItems.forEachIndexed { index, item ->
-                    NavigationBarItem(
-                        icon = { Icon(item.icon, contentDescription = item.label) },
-                        label = { Text(item.label) },
-                        selected = selectedIndex == index,
-                        onClick = { selectedIndex = index }
-                    )
-                }
-            }
-        }
+//        bottomBar = {
+//            NavigationBar {
+//                bottomNavItems.forEachIndexed { index, item ->
+//                    NavigationBarItem(
+//                        icon = { Icon(item.icon, contentDescription = item.label) },
+//                        label = { Text(item.label) },
+//                        selected = selectedIndex == index,
+//                        onClick = { selectedIndex = index }
+//                    )
+//                }
+//            }
+//        }
     ) { innerPadding ->
         Box(
             modifier = Modifier
