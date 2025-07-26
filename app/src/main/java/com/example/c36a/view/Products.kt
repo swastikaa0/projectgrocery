@@ -44,11 +44,11 @@ fun Products() {
     val products = remember {
         mutableStateListOf(
             // Fruits (5 items)
-            Product(1, "Orange", "$2.99", "/KG", 4.0f, R.drawable.apple_image, category = "Fruit"),
-            Product(2, "Banana", "$1.00", "/KG", 4.0f, R.drawable.apple_image, category = "Fruit"),
-            Product(3, "Strawberry", "$3.90", "/KG", 4.8f, R.drawable.apple_image, category = "Fruit"),
-            Product(4, "Apple", "$2.50", "/KG", 4.5f, R.drawable.apple_image, category = "Fruit"),
-            Product(5, "Mango", "$3.75", "/KG", 4.7f, R.drawable.apple_image, category = "Fruit"),
+//            Product(1, "Orange", "$2.99", "/KG", 4.0f, R.drawable.apple_image, category = "Fruit"),
+//            Product(2, "Banana", "$1.00", "/KG", 4.0f, R.drawable.apple_image, category = "Fruit"),
+//            Product(3, "Strawberry", "$3.90", "/KG", 4.8f, R.drawable.apple_image, category = "Fruit"),
+//            Product(4, "Apple", "$2.50", "/KG", 4.5f, R.drawable.apple_image, category = "Fruit"),
+//            Product(5, "Mango", "$3.75", "/KG", 4.7f, R.drawable.apple_image, category = "Fruit"),
 
             // Vegetables (5 items)
             Product(6, "Carrot", "$1.80", "/KG", 4.2f, R.drawable.apple_image, category = "Vegetable"),
