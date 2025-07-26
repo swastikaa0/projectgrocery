@@ -60,8 +60,8 @@ import com.example.c36a.viewmodel.OrderViewModelFactory
 
 class Cart : ComponentActivity (){
 
-    private lateinit var cartViewModel: CartViewModel
-    private lateinit var orderViewModel: OrderViewModel
+//    private lateinit var cartViewModel: CartViewModel
+//    private lateinit var orderViewModel: OrderViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
