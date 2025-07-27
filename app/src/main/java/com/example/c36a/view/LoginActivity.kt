@@ -245,7 +245,15 @@ fun LoginBody() {
                     Text("Remember me")
                 }
 
-                Text("Forget Password?")
+                Text(
+                    text="Forget Password?",
+                    color = Color.Blue,
+                    modifier = Modifier.clickable{
+                        val intent = Intent(context, ForgetPasswordActivity::class.java)
+                        context.startActivity(intent)
+                        activity.finish()
+                    }
+                )
             }
 
             Button(
